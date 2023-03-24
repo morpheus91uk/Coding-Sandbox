@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+    <form action="/HTML/Thankyou.html" target="_blank">    
+    <label for="firstname"> First Name: </label>
+    <input style="background-color: rgb(74, 228, 248);" placeholder="Joe" type="text" id="firstname" name="firstname">
+    <br>
+    <label for="second"> Second Name: </label>
+    <input type="text" placeholder="Bloggs" id="second" name="second">
+    <br>
+    <label for="email"> Email: </label>
+    <input type="email" placeholder="JoeBloggs@Bloggs.com" id="email" name="email" required>
+    <br>
+    <label for="dob"> Date of birth: </label>
+    <input type="date" id="dob" name="dob"> 
+    <br>
+        <input type="submit" id="submit" value="Submit Form">
+        <input type="reset" value="Reset Form">
+    <br>
+    </form>
+</div>
+<br><br><br>
+<div>
+    <form action="/HTML/Thankyou.html" target="_blank" > 
+    <label for="selectoption"> Select an option:</label>
+        <select name="selectoption" id="selectoption">
+            <option value="Selecta"> Select an option.</option>
+            <option value="Option One"> Option One </option>
+            <option value="Option Two"> Option Two </option>
+            <option value="Option Three"> Option Three </option>
+        </select>   
+        <br>
+        <input type="submit" id="submit" value="Subit Form"> 
+        <input type="reset" value="Reset Options">
+    </form>
+</div>
+<br><br><br>
+Vote for one of the options
+    <form action="/HTML/Thankyou.html" target="_blank">
+        <input type="radio" id="thisone" name="vote" value="thisone" required>
+        <label for="thisone">This One.</label>
+        <br>
+        <input type="radio" id="thatone" name="vote" value="thatone" required>
+        <label for="thatone">That One.</label>
+        <br>
+        <input type="radio" id="orthisone" name="vote" value="orthisone" required>
+        <label for="orthisone">Or This One.</label>
+        <br>
+        <input type="submit" id="submit" value="Submit Vote">
+        <input type="reset" value="Deselect">
+</form>
+<br><br><br>
+<div>
+Select one or more of these because, reasons:    
+    <form action="/HTML/Thankyou.html" target="_blank">
+        <input type="checkbox" id="check1" name="check" value="check1">
+        <label for="check1"> Choose Me! </label>
+        <br>
+        <input type="checkbox" id="check2" name="check" value="check2">
+        <label for="check2">Pick Me!</label>
+        <br>
+        <input type="checkbox" id="check3" name="check" value="check3">
+        <label for="check3">No! Select ME!</label>
+        <br>
+        <input type="submit" id="submit" value="Submit Choices">
+        <input type="reset" value="Unselect All">
+    </form>
+</div>
+<div>
+    <h2>Data List- How did you get to the store?</h2>
+<br>
+    <label for="vehicles"></label>
+    <input list="vehicles" name="travel" id="travel">
+    <datalist id="vehicles">
+        <option value="Car"></option>
+        <option value="Bus"></option>
+        <option value="Motorbike"></option>
+        <option value="Bike"></option>
+        <option value="Walk"></option>
+        <option value="Scooter"></option>
+        <option value="Horse"></option>
+    </datalist>
+<br><br><br>
+    <fieldset>
+        <legend>Card Details</legend>
+        <label for="nameoncard">Name as it appears on the card</label>
+        <input type="text" id="nameoncard" name="nameoncard" required>
+    </fieldset>
+    
+</div>
+   
+
+</body>
+</html>

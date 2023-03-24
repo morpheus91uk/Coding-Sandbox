@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: rgb(247, 144, 144);">
+    <h1>&#128176;<u>Welcome our store's order page!</u>&#128722</h1>
+    <h3>Select from our many great products below</h3>
+
+    <form>
+        <fieldset>
+            <legend>Please fill out the order form below</legend>
+            <table>
+            <tr>
+                <th style=" border: 2px black solid ; padding: 20px">Product</th>
+                <th style=" border: 2px black solid ; padding: 20px">Quantity</th> 
+                <th style=" border: 2px black solid ; padding: 20px">Shipping Options</th>   
+            </tr>    
+            <tr>
+                <th style=" border: 2px black solid ; padding: 20px"><form>
+                    <input type="checkbox" id="strawb1" name="strawb1" value="strawb1">
+                    <label for="strawb1"> Strawberry Jam </label>
+                    <br>
+                    <input type="checkbox" id="blueb1" name="blueb1" value="blueb1">
+                    <label for="blueb1">Blueberry Jam</label>
+                    <br>
+                    <input type="checkbox" id="raspb1" name="raspb1" value="raspb1">
+                    <label for="raspb1">Raspberry Jam</label>
+                    <br>
+                    <input type="checkbox" id="blackb1" name="blackb1" value="blackb1">
+                    <label for="blackb1">Blackberry Jam</label>
+                    <br>
+                    <input type="checkbox" id="gooseb1" name="gooseb1" value="gooseb1">
+                    <label for="gooseb1">Gooseberry Jam</label>
+                    <br>
+                    <input type="checkbox" id="apple1" name="apple1" value="apple1">
+                    <label for="apple1">Apple Jam</label>
+                    <br>
+                    <input type="checkbox" id="a+b1" name="a+b1" value="a+b1">
+                    <label for="a+b1">Apple+Blackcurrant Jam</label>
+                    <br>
+                    <input type="checkbox" id="cherry1" name="cherry1" value="cherry1">
+                    <label for="cherry1">Cherry Jam</label>
+                    <br>
+                    <input type="checkbox" id="rhubarb1" name="rhubarb1" value="rhubarb1">
+                    <label for="rhubarb1">Rhubarb Jam</label>
+                    <br>
+                    <input type="checkbox" id="damson1" name="damson1" value="damson1">
+                    <label for="damson1">Damson Jam</label>
+                </form></th>
+                <th style=" border: 2px black solid ; padding: 20px"><form>
+                    <input type="radio" id="single" name="quantity" value="single" required>
+                    <label for="single">Single - 1xJar 5.00 </label>
+                    <br>
+                    <input type="radio" id="fourpack" name="quantity" value="fourpack" required>
+                    <label for="fourpack">Multipack - 4xJars 17.50</label>
+                    <br>
+                    <input type="radio" id="box" name="quantity" value="box" required>
+                    <label for="box">Box - 12xJars 52.50</label>
+                    <br>
+                    <input type="radio" id="crate" name="quantity" value="crate" required>
+                    <label for="crate">Crate - 48xJars 200.00</label>
+                </form></th>
+                <th style="border: 2px black solid ; padding: 20px"><form>
+                    <label for="packing options">How you would like your order shipped.:</label>
+                    <select name="packing options" id="packing options">
+                        <option value="Delivery options:"> Delivery options.</option>
+                        <option value="Standard shipping"> Standard Shipping. </option>
+                        <option value="Gift Wrapped"> Gift Wrapped </option>
+                        <option value="Express shipping"> Express Shipping </option>
+                        <option value="Express Gift Wrapped">Express Gift Wrapped</option>
+                    </select> 
+                </form></th>                
+            </tr>
+            <tr>
+                <th style=" border: 2px black solid ; padding: 20px">Contact Info</th>
+                <th style=" border: 2px black solid ; padding: 20px">Delivery Address</th> 
+                <th style=" border: 2px black solid ; padding: 20px">Card Details</th>   
+            </tr>
+            <tr>
+                <th style="border: 2px black solid ; padding: 20px"><form>                                
+                    <label for="firstname"> First Name: </label>
+                    <input placeholder="Joe" type="text" id="firstname" name="firstname" required>
+                    <br>
+                    <label for="second"> Second Name: </label>
+                    <input type="text" placeholder="Bloggs" id="second" name="second" required>
+                    <br>
+                    <label for="email"> Email Address: </label>
+                    <input type="email" placeholder="JoeBloggs@Bloggs.com" id="email" name="email" required>
+                    <br>
+                    <label for="dob"> Date of birth: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <input type="date" id="dob" name="dob" required> 
+                    <br>
+                </form></th>    
+                <th style="border: 2px black solid ; padding: 20px"><form>
+                    <label for="address1">Address</label>
+                    <input type="text" placeholder="Name/No. and Street" id="address1" name="address1" required>
+                    <br>
+                    <label for="address2"></label>
+                    <input type="text" placeholder="Town" id="address2" name="address2">
+                    <label for="address2"></label>
+                    <input type="text" placeholder="City" id="address3" name="address3" required>
+                    <br>
+                    <label for="postcode">Postcode</label>
+                    <input type="text" placeholder="Enter postcode" id="postcode" name="postcode" required>
+                    <br>
+                </form></th>
+                <th style="border: 2px black solid ; padding: 20px"><form>
+                    <label for="cardtype">Select Card Type &nbsp;</label>
+                    <br>
+                    <select name="cardtype" id="cardtype" required>
+                    <option value="visacredit">Visa Credit Card</option>
+                    <option value="visadebit">Visa Debit Card</option>
+                    <option value="mastercard">Mastercard</option>
+                    <option value="americanexpress">American Express</option>
+                    </select>
+                    <br>
+                    <label for="cardnumber">Card Number</label>
+                    <input type="text" placeholder="Enter long card number" minlength="16" maxlength="16" required>
+                    <br>
+                    <label for="securitycode">Security Code</label>
+                    <input type="text" placeholder="CVC/CVV Security code" minlength="3" maxlength="3" required>
+                </form>    
+            </form></tr>
+        </table></fieldset>
+    </form>
+
+    <p>Continue to Check Out Button here somehwere.</p>
+
+</body>
+</html>
