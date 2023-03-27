@@ -1,0 +1,38 @@
+/* Into to CSS Day 1*/
+
+/* CCS Comment: This is a comment'*/
+/*
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Fasthand&family=Roboto+Condensed&display=swap" rel="stylesheet">
+*/
+div {
+    font-weight:700;
+    color:cornflowerblue;
+    font-size: 16px;
+}   
+
+.heading {
+    font-size: medium;
+}
+
+h1 {
+    font-weight:700;
+    color:red;
+}
+
+#parent{
+    color:crimson
+}
+
+.child{
+    color:blue;
+}
+
+.change{
+    color:pink
+}
+
+#child3{
+    color:green;
+}
