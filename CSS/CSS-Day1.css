@@ -36,3 +36,15 @@ h1 {
 #child3{
     color:green;
 }
+/* This rule sets the button text to red and the background to pink*/ 
+#button{
+    color:red;
+      background-color: pink
+  }
+  
+  /* pseudo class :hover below. This changes the color when the user mouses over the option.*/
+  #button:hover{
+    color: pink;
+      background-color: red;
+  }
+ 
