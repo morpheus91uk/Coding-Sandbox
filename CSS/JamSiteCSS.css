@@ -1,0 +1,70 @@
+body{
+    background-color: rgb(238, 137, 130);
+}
+
+h1{
+    color: rgb(20, 1, 5);
+
+}
+
+h2{
+    color: white;
+}
+
+.p-strawb{
+    color: rgb(211, 8, 120);
+}
+
+table{
+    border: 4px red dashed;
+    padding: 3px;
+    margin: 3px;
+}
+
+th{
+    border: 2px black solid;
+    padding: 20px;
+}
+
+td{
+    border: 2px black solid;
+    padding: 10px;
+}
+
+header{
+    background-color: rgb(245, 83, 96);
+    width: 100%;
+    position: fixed;
+}
+
+#image-header{
+    height:75px;
+    margin-top: 0px;
+    float: top left; 
+}
+
+
+.header{
+    display: inline-block;
+}
+
+nav{
+    display: inline;
+    margin-left: 10%;
+}
+
+a{
+    color: gold;
+    margin: 0% 5% 0% 5%;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+a:hover{
+    color: aqua;
+}
+
+.title{
+    margin: 0px;
+    margin-bottom: 2.5%;
+}
