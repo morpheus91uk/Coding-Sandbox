@@ -1,0 +1,99 @@
+/*font-family: 'Caveat', cursive; < Font chosen*/
+body{
+    background-color: bisque;
+    color: rgb(236, 244, 245);
+    font-family: Caveat, cursive;
+    margin-top: 0%;
+        
+}
+
+header{
+    background-color: rgb(230, 88, 88);
+    width: 100%;
+    position: fixed;
+      
+}
+
+#img-header{
+    height:80px;
+    margin-top: 8px;   
+}
+
+.img.header{
+    float: left;
+}
+
+h1{
+    display: inline;
+    margin-left: 20%;
+    font-family: Caveat, cursive;
+    
+    
+}
+
+nav{
+    display: inline;
+    margin-left: 10%;
+}
+
+a{
+    color: gold;
+    margin: 0% 1%;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+h2{
+    color: black;
+    margin-left: 12%
+}
+
+h3{
+    color: black;
+    margin-left: 12%
+}
+
+p{
+    color: black;
+    margin-left: 12%;
+    
+}
+
+#about{
+    margin-top: 12%;
+}
+
+.header{
+    display: inline;
+    
+}
+
+a:hover{
+    color: aqua;
+}
+
+/* floating menu*/
+
+#float-menu{
+    background-color: blue;
+    display: inline-block;
+}
+
+#float-btn{
+    position: fixed;
+    margin-top: 30%;
+    margin-left: 0%;
+    padding: 2% 1% 2% 1%;
+    background-color: beige;
+    border: solid black;
+    border-width: 1px;
+    border-radius: 15%;
+    float: left;
+    
+}
+
+#float-btn a{
+    display: block;
+}
+
+
