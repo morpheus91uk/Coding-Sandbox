@@ -1,0 +1,21 @@
+body{
+    background-color: antiquewhite;
+}
+li {
+    color: black;
+    width: 200px;
+    height: 250px;
+    background-color: aqua;
+    border: thin solid black;
+    outline: 2px outset rgb(223, 8, 8);
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 6px;
+    margin-right: 6px;
+    display:inline-block;
+}
+
+.products{
+    list-style-type: none;
+}
+

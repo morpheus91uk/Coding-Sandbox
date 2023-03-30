@@ -1,0 +1,17 @@
+body{
+    background-color: antiquewhite;
+}
+
+.parent-container{
+    background-color: blueviolet;
+    display: flex;
+    border: thick dashed red;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+}
+
+.child-item{
+    background-color: aqua;
+    border: thin solid black;
+}

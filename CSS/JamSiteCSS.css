@@ -1,6 +1,9 @@
 body{
     background-color: rgb(238, 137, 130);
-}
+    padding: 0%;
+    margin-left: 0px;
+    margin-top: -10px;
+    }
 
 h1{
     color: rgb(20, 1, 5);
@@ -35,12 +38,16 @@ header{
     background-color: rgb(245, 83, 96);
     width: 100%;
     position: fixed;
+    padding: 0;
+    margin: 0;
+      
+    
 }
 
 #image-header{
-    height:75px;
+    height:125px;
     margin-top: 0px;
-    float: top left; 
+    float: left; 
 }
 
 
@@ -67,4 +74,8 @@ a:hover{
 .title{
     margin: 0px;
     margin-bottom: 2.5%;
+}
+
+#iframe1{
+margin-top: 75px;
 }
