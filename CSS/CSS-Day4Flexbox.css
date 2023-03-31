@@ -1,17 +1,104 @@
 body{
-    background-color: antiquewhite;
+    background-color:  rgb(245, 83, 96);
 }
 
 .parent-container{
-    background-color: blueviolet;
+    background-color: rgb(238, 137, 130);
     display: flex;
     border: thick dashed red;
     justify-content: space-around;
-    flex-direction: row-reverse;
-    flex-wrap: wrap-reverse;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 12%;
 }
 
 .child-item{
-    background-color: aqua;
+    background-color: antiquewhite;
     border: thin solid black;
+    border-radius: 10%;
+    width: 20%;
+    margin-bottom: 2.5%;
+    }
+
+.child-item>img{
+    width: 90%;
+    border-radius: 10%;
+    padding-left: 4%;
+    height: 25%;
+    padding-bottom: 0%;
+
+}
+
+.child-item>ul{
+    list-style-type: none;
+    display: inline-block;
+    padding: 3px;
+    text-align: end;
+    font-size: 1.3vw;
+}
+
+.child-item>h4{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5vw;
+
+}
+
+.child-item>p{
+    text-align: justify;
+    padding-left: 3%;
+    padding-right: 3%;
+    font-size: 1.1vw;
+}
+
+.child-item>h5{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2vw;
+}
+
+header{
+    background-color: rgb(245, 83, 96);
+    width: 100%;
+    position: fixed;
+    padding: 0;
+    margin: 0; 
+}
+
+#image-header{
+    height:125px;
+    margin-top: 0px;
+    float: left; 
+}
+
+.header{
+    display: inline-block;
+}
+
+a{
+    color: gold;
+    margin: 0% 5% 0% 5%;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+a:hover{
+    color: aqua;
+}
+
+.title{
+    margin: 0px;
+    margin-bottom: 2.5%;
+}
+
+/*-------Media Queries------*/
+@media (min-width: 400px) {
+
+}
+
+@media (max-width: 900px) {
+    .child-item>img{
+           
+    }
+
 }
