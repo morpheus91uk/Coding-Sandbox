@@ -1,0 +1,156 @@
+body{
+    background-color: rgb(255, 180, 180);
+    padding: 0%;
+    margin-left: 0px;
+    margin-top: -3px;
+    
+    }
+
+h1{
+    color: rgb(0, 0, 0);
+    font-size: 36px;
+    font-family: 'Oswald';
+    text-shadow: 1px 1px 15px white;
+      
+    
+}
+
+header{
+    background-color: rgb(245, 83, 96);
+    width: 100%;
+    position: sticky;
+    top: 0;
+    padding: 0;
+    margin-bottom: 25px; 
+    box-shadow: 2px 2px 25px 10px rgb(116, 25, 32);
+}
+
+#image-header{
+    height:20vw;
+    max-height: 110px;
+    margin-top: 0px;
+    width:auto
+     
+     
+}
+
+.image-header{
+    float: left;
+    
+}
+
+
+.header{
+    display: inline-block;
+    
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow: auto;
+    margin-left: 10%;
+}
+
+a{
+    color: gold;
+    margin: 0.75% 0.5% 0% 0.5%;
+    padding: 0% 1%;
+    text-decoration: none;
+    font-size: 20px;
+    border: 2px solid rgb(255, 180, 180);
+    border-radius: 20%;
+    background-color: rgb(245, 83, 96);
+    box-shadow: 2px 2px 12px 5px  rgb(116, 25, 32);
+    box-shadow: 1px 1px 15px inset rgb(107, 3, 3);
+    font-family: 'Oswald';
+    
+}
+
+a:hover{
+    color: rgb(245, 83, 96);
+    background-color: rgb(255, 180, 180);
+}
+
+
+
+.title{
+    margin: 0px;
+    margin-bottom: 2.5%;
+    display: inline-block;
+    text-shadow: 3px solid gold;
+    
+}
+
+.headerbutton{
+    float: right;
+    text-align: center;
+    padding: 0px 0px;
+    width: 130px;
+}
+
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: rgb(245, 83, 96);
+    color: gold;
+    text-align: center;
+    border-radius: 6px;
+    padding: 2px 0;
+    position: absolute;
+    z-index: 1;
+    top: 120%;
+    left: 20%;
+    margin-left: -60px;
+    border: 1px solid white;
+    box-shadow: 2px 2px 12px 5px  rgb(116, 25, 32);
+    box-shadow: 1px 1px 15px inset rgb(107, 3, 3);
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    bottom: 50%;
+    left: 150%;
+    margin-left: -5px;
+    
+    
+}
+
+.tooltip:hover .tooltiptext {
+    visibility:visible;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 700px) and (min-width: 501px) {
+    a {font-size: 14px;}
+    a:hover {font-size: 150%}
+}
+
+@media screen and (max-width: 1024px) and (min-width: 701px) {
+    a {font-size: 16px;}
+    a:hover {font-size: 150%}
+}
+
+@media screen and (max-width: 500px) and (min-width: 0px) {
+    a {font-size: 12px;}
+    a:hover {font-size: 150%}
+    h1 {font-size: 26px;}
+}
