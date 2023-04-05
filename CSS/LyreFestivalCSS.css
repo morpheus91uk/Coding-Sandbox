@@ -100,8 +100,8 @@ a:hover{
 .tooltip .tooltiptext {
     visibility: hidden;
     width: 120px;
-    background-color: rgb(245, 83, 96);
-    color: gold;
+    background-color: rgb(255, 180, 180);
+    color: rgb(245, 83, 96);
     text-align: center;
     border-radius: 6px;
     padding: 2px 0;
@@ -125,11 +125,80 @@ a:hover{
     
 }
 
-.tooltip:hover .tooltiptext {
-    visibility:visible;
+
+#facebookicon:hover #tooltipfacebook {
+    visibility: visible;
+}
+
+#twittericon:hover #tooltiptwitter {
+    visibility: visible;
+}
+
+#tiktokicon:hover #tooltiptiktok {
+    visibility: visible;
+}
+
+#discordicon:hover #tooltipdiscord {
+    visibility: visible;
+}
+
+#instagramicon:hover #tooltipinstagram {
+    visibility: visible;
+}
+
+#linkedinicon:hover #tooltiplinkedin {
+    visibility: visible;
+}
+
+#youtubeicon:hover #tooltipyoutube {
+    visibility: visible;
 }
 
 
+#homepage{
+    color: rgb(245, 83, 96);
+    background-color: rgb(255, 180, 180);
+}
+
+#Contactus{
+    color: rgb(245, 83, 96);
+    background-color: rgb(255, 180, 180);
+}
+
+#gallery{
+    color: rgb(245, 83, 96);
+    background-color: rgb(255, 180, 180);
+}
+
+#history{
+    color: rgb(245, 83, 96);
+    background-color: rgb(255, 180, 180);
+}
+
+#info{
+    color: rgb(245, 83, 96);
+    background-color: rgb(255, 180, 180);
+}
+
+#lineup{
+    color: rgb(245, 83, 96);
+    background-color: rgb(255, 180, 180);
+}
+
+#news{
+    color: rgb(245, 83, 96);
+    background-color: rgb(255, 180, 180);
+}
+
+#shop{
+    color: rgb(245, 83, 96);
+    background-color: rgb(255, 180, 180);
+}
+
+#takepart{
+    color: rgb(245, 83, 96);
+    background-color: rgb(255, 180, 180);
+}
 
 
 
