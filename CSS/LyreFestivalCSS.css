@@ -3,7 +3,7 @@ body{
     padding: 0%;
     margin-left: 0px;
     margin-top: -3px;
-    
+    font-family: 'Oswald';
     }
 
 h1{
@@ -11,13 +11,12 @@ h1{
     font-size: 36px;
     font-family: 'Oswald';
     text-shadow: 1px 1px 15px white;
-      
-    
 }
 
 header{
     background-color: rgb(245, 83, 96);
     width: 100%;
+    z-index: 1;
     position: sticky;
     top: 0;
     padding: 0;
@@ -42,7 +41,7 @@ header{
 
 .header{
     display: inline-block;
-    
+       
 }
 
 nav{
@@ -201,25 +200,245 @@ a:hover{
 }
 
 
+.grid-container1 {
+    display: grid;
+    grid-template-areas: "headareaone headareaone headareaone headareatwo"
+                         'imagearea1 imagearea2 imagearea3 imagearea4'
+                         'imagearea5 imagearea6 imagearea7 imagearea8'
+                         'imagearea9 imagearea10 imagearea11 imagearea12'
+                         "imagearea13 imagearea14 imagearea15 imagearea16"
+                         "imagearea17 imagearea18 imagearea19 imagearea20";
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto; 
+    gap: 0px;
+    background-color: rgb(255, 180, 180);
+    margin: 5px;
+    padding: 0.2%;
+    border: 0px solid rgb(255, 255, 255);
+    box-shadow: inset 10px 10px 100px 150px rgb(245, 83, 96), 0px 0px 50px 5px rgb(116, 25, 32);
+ }
 
-
-
-
-
-
-
-@media screen and (max-width: 700px) and (min-width: 501px) {
-    a {font-size: 14px;}
-    a:hover {font-size: 150%}
+img .grid-container1 {
+    width: 100%;
 }
 
-@media screen and (max-width: 1024px) and (min-width: 701px) {
-    a {font-size: 16px;}
-    a:hover {font-size: 150%}
+img{
+    max-height: 250px;
+    max-width: 99%;
+    z-index: 0;
+    padding: 0.5%;
+    margin-right:0% ;
+    opacity: 0.7;
+    line-height: 0.5%;
+    
+}
+
+.grid-container1 img:hover{
+    opacity: 1;
+    max-height: 100%;
+    max-width: 100%;
+    
+}
+
+#imagearea1 {
+    width: 100%;
+}
+
+#imagearea2 {
+    width: 100%;
+}
+
+#imagearea3 {
+    width: 100%;
+}
+
+#imagearea4 {
+    width: 100%;
+}
+
+#imagearea5 {
+    width: 100%;
+}
+
+#imagearea6 {
+    width: 100%;
+}
+
+#imagearea7 {
+    width: 100%;
+}
+
+#imagearea8 {
+    width: 100%;
+}
+
+#imagearea9 {
+    width: 100%;
+}
+
+#imagearea10 {
+    width: 100%;
+}
+
+#imagearea11 {
+    width: 100%;
+}
+
+#imagearea12 {
+    width: 100%;
+}
+
+#imagearea13 {
+    width: 100%;
+}
+
+#imagearea14 {
+    width: 100%;
+}
+
+#imagearea15 {
+    width: 100%;
+}
+
+#imagearea16 {
+    width: 100%;
+}
+
+#imagearea17 {
+    width: 100%;
+}
+
+#imagearea18 {
+    width: 100%;
+}
+
+#imagearea19 {
+    width: 100%;
+}
+
+#imagearea20 {
+    width: 100%;
+}
+
+.divgallery1{
+    grid-area: headareaone;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(255, 180, 180);
+    box-shadow: inset 10px 10px 100px 25px rgb(240, 104, 115)
+
+}
+
+.divgallery2{
+    grid-area: headareatwo;
+    width: 100%;
+    background-color: rgb(255, 180, 180);
+    box-shadow: inset 10px 10px 100px 25px rgb(240, 104, 115);
 }
 
 @media screen and (max-width: 500px) and (min-width: 0px) {
     a {font-size: 12px;}
     a:hover {font-size: 150%}
     h1 {font-size: 26px;}
+    img{
+        max-height: auto;
+        max-width: 99%;
+    }
+    .grid-container1{
+        grid-template-areas:"headareaone"
+                            "headareatwo"
+                            "imagearea1"
+                            "imagearea2"
+                            "imagearea3"
+                            "imagearea4"
+                            "imagearea5"
+                            "imagearea6"
+                            "imagearea7"
+                            "imagearea8"
+                            "imagearea9"
+                            "imagearea10"
+                            "imagearea11"
+                            "imagearea12"
+                            "imagearea13"
+                            "imagearea14"
+                            "imagearea15"
+                            "imagearea16"
+                            "imagearea17"
+                            "imagearea18"
+                            "imagearea19"
+                            "imagearea20";
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+}
+
+@media screen and (max-width: 700px) and (min-width: 501px) {
+    a {font-size: 14px;}
+    a:hover {font-size: 150%}
+    .grid-container1{
+        grid-template-areas:"headareaone headareatwo"
+                            "imagearea1 imagearea2"
+                            "imagearea3 imagearea4"
+                            "imagearea5 imagearea6"
+                            "imagearea7 imagearea8"
+                            "imagearea9 imagearea10"
+                            "imagearea11 imagearea12"
+                            "imagearea13 imagearea14"
+                            "imagearea15 imagearea16"
+                            "imagearea17 imagearea18"
+                            "imagearea19 imagearea20";
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+}
+}
+
+@media screen and (max-width: 1024px) and (min-width: 701px) {
+    a {font-size: 16px;}
+    a:hover {font-size: 150%}
+    .grid-container1{
+        grid-template-areas:"headareaone headareaone headareatwo"
+                            "imagearea1 imagearea2 imagearea3"
+                            "imagearea4 imagearea5 imagearea6"
+                            "imagearea7 imagearea8 imagearea9"
+                            "imagearea10 imagearea11 imagearea12"
+                            "imagearea13 imagearea14 imagearea15"
+                            "imagearea16 imagearea17 imagearea18"
+                            "imagearea19 imagearea20 imagearea21";
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto;
+}
+}
+
+.footercontainer{
+    background-color: aqua;
+    display: inline-flex;
+    flex-direction: row;
+    width: 99%;
+    border: 1px solid black;
+    margin: 0px;
+    padding: 10px;  
+}
+
+.footerrow{
+    display: inline-table;
+    width: 33.33%;
+    border: 1px solid black;
+    
+}
+
+#footer1{
+    background-color: beige;
+    width: 30%;
+    
+}
+
+#footer2{
+    background-color: aquamarine;
+    width: 30%;
+}
+
+#footer3{
+    background-color: blueviolet;
+    width: 30%;
 }

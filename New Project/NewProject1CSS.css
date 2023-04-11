@@ -1,0 +1,29 @@
+body{
+    background-color: antiquewhite;
+    padding: 2px;
+    margin: 2px;
+}
+
+img{
+    width: 100%;
+}
+
+#main_content{
+    width: 100%;
+}
+
+#main_content #hero{
+    width: 100%;
+}
+
+.content_wrapper{
+    display: flex;
+}
+
+.content_wrapper div{
+    width: 33%;
+}
+
+.content_wrapper div h1{
+    background-color: aqua;
+}
