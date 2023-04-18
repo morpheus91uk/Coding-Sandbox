@@ -54,6 +54,7 @@ nav{
 
 a{
     color: gold;
+    text-shadow: 1px 1px black;
     margin: 0.75% 0.5% 0% 0.5%;
     padding: 0% 1%;
     text-decoration: none;
@@ -222,7 +223,7 @@ img .grid-container1 {
     width: 100%;
 }
 
-img{
+.imggallery{
     max-height: 250px;
     max-width: 99%;
     z-index: 0;
@@ -345,6 +346,9 @@ img{
         max-height: auto;
         max-width: 99%;
     }
+    .footercontact{
+        font-size: 16px;
+    }
     .grid-container1{
         grid-template-areas:"headareaone"
                             "headareatwo"
@@ -410,35 +414,111 @@ img{
 }
 }
 
+footer{
+    position: relative; bottom: 0;
+}
+
 .footercontainer{
-    background-color: aqua;
+    background-color:rgb(245, 83, 96) ;
+    
     display: inline-flex;
     flex-direction: row;
     width: 99%;
-    border: 1px solid black;
     margin: 0px;
-    padding: 10px;  
+    padding: 2px;  
+    box-shadow: 2px 2px 25px 10px rgb(116, 25, 32);
 }
 
 .footerrow{
     display: inline-table;
     width: 33.33%;
-    border: 1px solid black;
+    
     
 }
 
 #footer1{
-    background-color: beige;
-    width: 30%;
+    
+    width: 27%;
     
 }
 
 #footer2{
-    background-color: aquamarine;
-    width: 30%;
+    
+    width: 27%;
 }
 
 #footer3{
-    background-color: blueviolet;
-    width: 30%;
+    
+    width: 27%;
 }
+
+li{
+    list-style: none;
+    padding-bottom: 2%;
+    padding-right: 0;
+}
+
+li>a{
+    text-shadow: 1px 1px black;
+    background-color:rgb(255, 180, 180);
+    list-style: none;
+}
+ .footerlogo{
+    width: auto;
+ }
+
+ .footercontact{
+    width: auto;
+    font-size: 18px;
+    
+ }
+
+ .grid-container2 {
+    display: grid;
+    grid-template-areas: "headone headone headone"
+                         "left1 hero1 right1"
+                         "left2 hero2 right2";                     
+    grid-template-columns:30% 40% 30%;
+    grid-template-rows: auto auto auto; 
+    gap: 3px;
+    background-color: rgb(255, 180, 180);
+    margin: 5px;
+    padding: 0.2%;
+    box-sizing: border-box;
+    border: 1px solid rgb(255, 255, 255);
+    box-shadow: inset 10px 10px 100px 150px rgb(245, 83, 96), 0px 0px 50px 5px rgb(116, 25, 32);
+ }
+
+ #hero1{
+    grid-area: "hero1";
+    max-width: 39%;
+}
+
+ #headone{
+    grid-area: "headone headone headone";
+    max-width: 99%;
+ }
+
+ #left1{
+    grid-area: "left1";
+    max-width: 29%;
+ }
+
+ #right1{
+    grid-area: "right1";
+    max-width: 29%;
+ }
+
+ *{
+    box-sizing: border-box;
+ }
+
+ #heroimage{
+    display: block;
+    height: 30vw;;
+    width:auto; 
+    box-sizing: border-box;
+    overflow: hidden;
+    
+    
+ }
