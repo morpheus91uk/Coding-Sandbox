@@ -121,10 +121,7 @@ a:hover{
     bottom: 50%;
     left: 150%;
     margin-left: -5px;
-    
-    
 }
-
 
 #facebookicon:hover #tooltipfacebook {
     visibility: visible;
@@ -153,7 +150,6 @@ a:hover{
 #youtubeicon:hover #tooltipyoutube {
     visibility: visible;
 }
-
 
 #homepage{
     color: rgb(245, 83, 96);
@@ -200,7 +196,6 @@ a:hover{
     background-color: rgb(255, 180, 180);
 }
 
-
 .grid-container1 {
     display: grid;
     grid-template-areas: "headareaone headareaone headareaone headareatwo"
@@ -238,7 +233,6 @@ img .grid-container1 {
     opacity: 1;
     max-height: 100%;
     max-width: 100%;
-    
 }
 
 #imagearea1 {
@@ -328,7 +322,6 @@ img .grid-container1 {
     justify-content: center;
     background-color: rgb(255, 180, 180);
     box-shadow: inset 10px 10px 100px 25px rgb(240, 104, 115)
-
 }
 
 .divgallery2{
@@ -420,7 +413,6 @@ footer{
 
 .footercontainer{
     background-color:rgb(245, 83, 96) ;
-    
     display: inline-flex;
     flex-direction: row;
     width: 99%;
@@ -432,23 +424,17 @@ footer{
 .footerrow{
     display: inline-table;
     width: 33.33%;
-    
-    
 }
 
 #footer1{
-    
     width: 27%;
-    
 }
 
 #footer2{
-    
     width: 27%;
 }
 
 #footer3{
-    
     width: 27%;
 }
 
@@ -470,16 +456,14 @@ li>a{
  .footercontact{
     width: auto;
     font-size: 18px;
-    
  }
 
  .grid-container2 {
     display: grid;
-    grid-template-areas: "headone headone headone"
-                         "left1 hero1 right1"
-                         "left2 hero2 right2";                     
-    grid-template-columns:30% 40% 30%;
-    grid-template-rows: auto auto auto; 
+    grid-template-areas: 'headone headone headone'
+                         'left1 hero1 right1'
+                         'left2 hero2 right2';                     
+    grid-template-columns:30% 40% 30%; 
     gap: 3px;
     background-color: rgb(255, 180, 180);
     margin: 5px;
@@ -487,26 +471,27 @@ li>a{
     box-sizing: border-box;
     border: 1px solid rgb(255, 255, 255);
     box-shadow: inset 10px 10px 100px 150px rgb(245, 83, 96), 0px 0px 50px 5px rgb(116, 25, 32);
- }
+    grid-auto-flow: row;
+}
 
  #hero1{
     grid-area: "hero1";
-    max-width: 39%;
+    
 }
 
  #headone{
     grid-area: "headone headone headone";
-    max-width: 99%;
+    
  }
 
  #left1{
     grid-area: "left1";
-    max-width: 29%;
+    
  }
 
  #right1{
     grid-area: "right1";
-    max-width: 29%;
+    
  }
 
  *{
@@ -519,6 +504,8 @@ li>a{
     width:auto; 
     box-sizing: border-box;
     overflow: hidden;
-    
-    
+ }
+
+ .gridimg{
+    width: 100%;
  }
