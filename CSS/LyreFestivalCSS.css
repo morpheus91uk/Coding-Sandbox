@@ -214,7 +214,7 @@ a:hover{
     box-shadow: inset 10px 10px 100px 150px rgb(245, 83, 96), 0px 0px 50px 5px rgb(116, 25, 32);
  }
 
-img .grid-container1 {
+.grid-container1 img  {
     width: 100%;
 }
 
