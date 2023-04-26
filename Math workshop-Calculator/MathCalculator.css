@@ -1,3 +1,4 @@
+/* /* some basic rules for the page  */
 *, *::before, *::after{
     margin: 10;
     padding: 0;
@@ -15,6 +16,7 @@ body{
     align-items: center;
 }
 
+/* rules to set the general size and look of the calculator */
 .calculator2 {
     border: 8px solid black;
     border-radius: 20%;
@@ -24,7 +26,7 @@ body{
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
-
+/* rules to govern the History div styling */
 .calculator2 #history {
     font-size: 20px;
     background-color: antiquewhite;
@@ -35,7 +37,7 @@ body{
     overflow: auto;
     
 }
-
+ /* rules for the actual display of the calculator */
 .calculator2 #display2 {
     font-size: 42px;
     background-color: antiquewhite;
@@ -45,6 +47,7 @@ body{
     text-align: end;
 }
 
+/* rules to space and align the buttons */
 .calculator2 table {
     padding: 6px;
     border: 1px solid black;
@@ -53,6 +56,7 @@ body{
     table-layout: fixed;
 }
 
+/* rules for the individual buttons */
 .calculator2 table td {
     box-shadow: 2px 3px rgb(148, 131, 131);
     border: 1px solid black;
@@ -60,7 +64,7 @@ body{
     padding: 16px;
     cursor: pointer;
 }
-
+/* hover rule, so user can see easier, plus prompt for them to click */
 td:hover{
     background-color: cadetblue;
     cursor: pointer;

@@ -1,140 +1,39 @@
-
-// // Need to listen for all keypresses + determine type of key pressed
-
-// const calculator = document.querySelector('.calculator');
-// console.log(calculator)
-// const keys = document.querySelector('.calculator_keys');
-// console.log(keys)
-// const display = document.querySelector('.calculator_display');
-
-// keys.addEventListener('click', e => {
-//     if (e.target.matches ('button')) {
-//         const key = e.target;
-//         const action = key.dataset.action;
-//         const keyContent = key.textContent;
-//         const displayedNum = display.textContent;
-//         Array.from(key.parentNode.children)
-//             .forEach(k => k.classList.remove('is-depressed'))
-    
-//     if (action === 'decimal') {
-//         console.log ('decimal key!')
-//         if(!displayedNum.includes('.')) {
-//             display.textContent = displayedNum + '.'
-//         } else if (previousKeyType === 'operator') {
-//             display.textContent = '0.'
-//         }
-//         calculator.dataset.previousKey = 'decimal'
-//     }
-
-//     if (action === 'clear') {
-//         console.log ('clear key!')
-//         display.textContent = '0'
-//         const firstValue = undefined
-//         const operator = undefined
-//         const secondValue = undefined
-//         const calcValue = undefined
-//         calculator.dataset.previousKeyType = 'clear'
-//     }
-
-//     const previousKeyType = calculator.dataset.previousKeyType
-    
-//     if (action === 'calculate') {
-//         console.log('equal key!')
-//         const firstValue = calculator.dataset.firstValue
-//         const operator = calculator.dataset.operator
-//         const secondValue = displayedNum
-//         const calculate = (n1, operator, n2) => {
-//             let result = ''
-//             if (operator === 'add') {
-//                 result = parseFloat(n1) + parseFloat(n2)
-//             } else if ( operator === 'subtract') {
-//                 result = parseFloat(n1) - parseFloat(n2)
-//             } else if (operator === ' multiply') {
-//                 result = parseFloat(n1) * parseFloat(n2) 
-//             } else if ( operator === 'divide') {
-//                 result = parseFloat(n1) / parseFloat(n2)
-//             }
-//             return result
-//         }
-//         display.textContent = calculate(firstValue, operator, secondValue)
-//         calculator.dataset.previousKeyType = 'calculate'
-//     }
-
-//     if (!action) {
-//         console.log('number key!')
-//         if(displayedNum === '0' || previousKeyType === 'operator') {
-//             display.textContent = keyContent
-//             calculator.dataset.previousKey = 'number'
-//         } else {
-//             display.textContent = displayedNum + keyContent
-//         }
-//     }
-
-//     if (action === 'add'||
-//         action === 'subtract'||
-//         action ==='multiply'||
-//         action ==='divide'
-//     ) {
-//         console.log('operator key!')
-//         const firstValue = calculator.dataset.firstValue
-//         const operator = calculator.dataset.operator
-//         const secondValue = displayedNum
-//         const calculate = (n1, operator, n2) => {
-//             let result = ''
-//             if (operator === 'add') {
-//                 result = parseFloat(n1) + parseFloat(n2)
-//             } else if ( operator === 'subtract') {
-//                 result = parseFloat(n1) - parseFloat(n2)
-//             } else if (operator === ' multiply') {
-//                 result = parseFloat(n1) * parseFloat(n2) 
-//             } else if ( operator === 'divide') {
-//                 result = parseFloat(n1) / parseFloat(n2)
-//             }
-//             return result
-//         }
-
-//         if (firstValue && operator && previousKeyType !== 'operator') {
-
-//             display.textContent - calculate(firstValue, operator, secondValue)
-//             const calcValue = calculate(firstValue, operator, secondValue)
-//             display.textContent = calcValue
-//             calculator.dataset.firstValue = calcValue
-//             } else {
-//                 calculator.dataset.firstValue = displayedNum
-//             }
-//             key.classList.add('is-depressed')
-//             calculator.dataset.previousKeyType = 'operator'
-//             calculator.dataset.operator = action
-//         }
-
-
-// }});
+// main function for handling click events.
 function handler(event) {
+    // set variables to interact with the two display divs
     const value = event.target.innerText;
     const display = document.getElementById("display2");
     const history = document.getElementById("history");
-    // const history2 = document.getElementById("history2");
-
+    
+// switch value to add functionality to the none operator keys
     switch(value) {
+        // AC replaces any text in the display with an empty string
         case "AC":
             display.innerText = "";
             break;
-
+        // del case removes the latest character entered, one at a time per click.
         case "del":
             display.innerText = display.innerText.slice(0, -1);
             break;
-
+        // the equals case first takes the value from display, evaluates the value,
+        // then adds both the initial calculation and the evaluation to the history div
+        // Then it adds the evaluation of the calculation, to the display, allowing the user
+        // to continue inputing commands, to work with the result. 
+        // each time the case is activated, the history is updated with the newest calculation
+        // each update to the history, is seperated by an elipsis to help seperate the updates.
         case "=": 
             history.innerText += display.innerText + " = " + (eval(display.innerText)) + "  .... ";
             display.innerText = eval(display.innerText) ;
             break;
-
+        //default switch case
         default:
             display.innerText += value;
     }
     
 }
-
+// This code takes all elements by tag name td - all the buttons. 
+// for each button, it adds an event listener so that when a user clicks a button
+// the function handler (above) takes effect and the correct value is added to the display.
 Array.from(document.getElementsByTagName("td")).forEach((td) => {
         td.addEventListener("click", handler);
     }
