@@ -1,0 +1,15 @@
+/* font-family: 'Oswald', sans-serif;
+font-family: 'Sigmar', cursive; */
+
+#countdownTimer{
+    border: 1px solid rgb(255, 255, 255);
+    height: 200px;
+    width: 400px;
+    background-color: rgb(255, 180, 180);
+    box-shadow: inset 5px 5px 100px 25px rgb(240, 104, 115), 2px 2px 25px 10px rgb(116, 25, 32);
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 0;
+    font-family: 'Sigmar', 'Oswold', sans-serif;
+    text-shadow: 2px 2px 20px rgb(255, 255, 255);
+}
