@@ -78,10 +78,12 @@ nav a, footer a{
     box-shadow: 2px 2px 12px 5px  rgb(116, 25, 32);
     box-shadow: 1px 1px 15px inset rgb(107, 3, 3);
     font-family: 'Oswald';
+    z-index: 4;
+    opacity: 1;
     
 }
 
-a:hover{
+a:hover, .fa-brands:hover{
     color: rgb(245, 83, 96);
     background-color: rgb(255, 180, 180);
 }
@@ -107,15 +109,35 @@ a:hover{
 .tooltip {
     position: relative;
     display: inline-block;
-    
+    color: gold;
+    z-index: 5;
+    opacity: 1;
+}
+
+.fa-brands{
+    color: gold;
+    text-shadow: 1px 1px black;
+    margin: 0.75% 0.5% 0% 0.5%;
+    padding: 2.5% 2%;
+    text-decoration: none;
+    font-size: 20px;
+    border: 2px solid rgb(255, 180, 180);
+    border-radius: 20%;
+    background-color: rgb(245, 83, 96);
+    box-shadow: 2px 2px 12px 5px  rgb(116, 25, 32);
+    box-shadow: 1px 1px 15px inset rgb(107, 3, 3);
+    z-index: 4;
+    opacity: 1;
+
 }
 
 .tooltip .tooltiptext {
     visibility: hidden;
     width: 120px;
     background-color: rgb(255, 180, 180);
-    color: rgb(245, 83, 96);
+    color: black;
     text-align: center;
+    text-shadow: 1px 1px rgb(107, 3, 3);
     border-radius: 6px;
     padding: 2px 0;
     position: absolute;
@@ -126,6 +148,7 @@ a:hover{
     border: 1px solid white;
     box-shadow: 2px 2px 12px 5px  rgb(116, 25, 32);
     box-shadow: 1px 1px 15px inset rgb(107, 3, 3);
+    font-family: 'Oswold';
 }
 
 .tooltip .tooltiptext::after {
@@ -345,7 +368,7 @@ a:hover{
 }
 
 @media screen and (max-width: 501px) and (min-width: 0px) {
-    a {font-size: 12px;}
+    a {font-size: 11px;}
     a:hover {font-size: 150%}
     h1 {font-size: 26px;}
     img{
@@ -579,7 +602,101 @@ h4{
     margin-top: 5%;
 }
 
-.frontpagelink:hover{
-    /* NEED FIGURE OUT SHRINK ONHOVER FOR IMAGES */
-     
+.frontpagelink img:hover{
+    transform: scale(0.95, 0.95);
+}
+
+hr{
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+
+.shopitem img{
+    max-height: auto;
+    max-width: 95%;
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    box-shadow: 1px 1px 5px 2px grey;
+}
+
+.shopitem{
+    margin-top: 2%;
+    margin-right: 4%;
+    border: 1px solid black;
+}
+
+#shopframe{
+    width: 100%;
+    height: 1500px;
+}
+
+.shopitem p{
+    font-size: 16px;
+}
+
+.quantity{
+    display: inline-flex;
+}
+
+.quantity button{
+    margin-left: 8px;
+    margin-right: 8px;
+    background-color: rgb(116, 25, 32);
+    color: gold;
+    text-shadow: 2px 2px black;
+    box-shadow: inset 1px 1px 10px rgb(255, 180, 180) ;
+    font-size: 20px;
+}
+
+.quantity button:hover{
+    background:rgb(255, 180, 180);
+    box-shadow: inset 1px 1px 10px rgb(116, 25, 32);
+    color: black;
+    text-shadow: none;
+
+}
+.quantitytotal{
+    background-color: white;
+    border: 1px solid black;
+    height: 100%;
+    width: 30px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.thumbnail img{
+    display: inline-flex;
+    height: auto;
+    width: 25%;
+}
+
+.thumbnail img:hover{
+    transform: scale(0.95, 0.95);
+}
+
+td button{
+    color: gold;
+    text-shadow: 1px 1px black;
+    margin: 0.75% 0.5% 0% 0.5%;
+    padding: 0% 1%;
+    font-size: 20px;
+    border: 2px solid white;
+    border-radius: 20%;
+    background-color: rgb(245, 83, 96);
+    box-shadow: 1px 1px 15px inset rgb(107, 3, 3),1px 1px 5px 2px grey;
+    font-family: 'Oswald';
+    z-index: 4;
+    opacity: 1;
+}
+
+td button:hover{
+    background-color:rgb(255, 180, 180);
+    color: rgb(245, 83, 96);
+}
+
+.shopitem img{
+    max-height: 500px;
 }
