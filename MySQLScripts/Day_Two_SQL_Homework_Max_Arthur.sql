@@ -190,3 +190,13 @@ DROP FOREIGN KEY course_ibfk_1, DROP KEY studentID;
 SELECT * FROM Course;
 DESC learners;
 DESC Course;
+
+-- --------------------------------------------------------------------------------------
+-- ASSIGNMENT ---------------------------------
+-- Create the world-relational-data Schema from the image provided. 
+-- Underlined columns are PRIMARY KEYS
+-- One of which is a composit PRIMARY KEY
+-- FOREIGN KEYS REFERENCED VIA THE ARROWS
+-- Always leave adding FOREIGN KEYS to the end, add them after through ALTER keyword
+
+-- -------------------------------------------------------------------------------
